@@ -15,7 +15,7 @@ btn.addEventListener('click', () => {
 
 })
     
-let itemStore = [];
+let itemStore = []; 
 
 function storeItem(itemValue) {
     let obj = {
@@ -41,7 +41,7 @@ function renderVeiws(itemArray = []) {
         const itemList = __('p');
 
         const setActive = (markItemColor='', listItemColor='') => {
-            markItem.style.color =   markItemColor;
+            markItem.style.backgroundColor =   markItemColor;
             listItem.style.color = listItemColor;
         }
         itemList.appendChild(listItem);
